@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>〇〇e+〇の変換</title>
-  </head>
-  <body>
-    <h1> e+ 変換機</h1>
-    <p>8e+16 みたいなやつを80000000000000000 のように変換する</p>
-    <form>
-      <input type="number" name="a" value="0">
-      e+
-      <input type="number" name="b" value="0">
-      =
-      <output name="op1" style="background:#FCC;">0</output>
-      <br>
-      <input type="button" onclick="op1.value = Number(a.value) * Number(b.value);" value="変換">
-      </form>
-  </body>
+<head>
+	<meta charset="UTF-8"/>
+	<title>e変換</title>
+</head>
+		<body>
+			<h1>e変換</h1>
+			<p>8e+16のような指数を80000000000000000のような数字に変える</p>
+			<p>全角で入力 </p>
+			<form>
+    		 <input type="number" name="a" value="0">	
+     		 <br>
+     		 <input type="button" onclick="document.write( Math.toString(Number(a.value)));
+     		 document.write('<hr>' + 'F5を押してもう一度変換');" value="変換">
+     		 </form>
+     		 <script src="math_extension.js"></script>
+		</body>
 </html>
